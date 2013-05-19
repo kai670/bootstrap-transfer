@@ -37,17 +37,21 @@
             /* #=============================================================================== */
             /* # Wire internal events */
             /* #=============================================================================== */
-            _this.$add_btn.click(function(){
+            _this.$add_btn.click(function(event){
                 _this.move_elems(_this.$remaining_select.val(), false, true);
+                event.preventDefault()
             });
-            _this.$remove_btn.click(function(){
+            _this.$remove_btn.click(function(event){
                 _this.move_elems(_this.$target_select.val(), true, false);
+                event.preventDefault()
             });
-            _this.$choose_all_btn.click(function(){
+            _this.$choose_all_btn.click(function(event){
                 _this.move_all(false, true);
+                event.preventDefault()
             });
-            _this.$clear_all_btn.click(function(){
+            _this.$clear_all_btn.click(function(event){
                 _this.move_all(true, false);
+                event.preventDefault()
             });
             _this.$filter_input.keyup(function(){
                 _this.update_lists(true);
