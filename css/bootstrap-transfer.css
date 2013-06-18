@@ -65,6 +65,10 @@
 	line-height: 140%;
 }
 
+.bootstrap-transfer-container .selector-filter input {
+	padding-right: 0;
+}
+
 .bootstrap-transfer-container .selector-filter.right {
 	padding-top: 5px;
 	height: 18px;
@@ -76,18 +80,7 @@
 
 .bootstrap-transfer-container a.selector-chooseall, 
 .bootstrap-transfer-container a.selector-clearall {
-	font-size: 80%;
 	text-decoration: none;
-	padding-left: 17px;
-	margin: 0;
-}
-
-.bootstrap-transfer-container a.selector-chooseall {
-	background: url("../img/bootstrap-transfer-selector-addall.gif") left center no-repeat;
-}
-
-.bootstrap-transfer-container a.selector-clearall {
-	background: url("../img/bootstrap-transfer-selector-removeall.gif") left center no-repeat;
 }
 
 .bootstrap-transfer-container .selector-chooser {
@@ -97,34 +90,7 @@
 	padding: 2px;
 }
 
-.bootstrap-transfer-container .selector-add {
-	background: url(../img/bootstrap-transfer-selector-add.gif) top center no-repeat;
-	margin-bottom: 3px;
+.bootstrap-transfer-container select {
+	outline: 0;
+	padding: 0;
 }
-
-.bootstrap-transfer-container .selector-remove {
-	background: url(../img/bootstrap-transfer-selector-remove.gif) top center no-repeat;
-}
-
-.bootstrap-transfer-container .selector-add, .selector-remove {
-	width: 16px;
-	height: 16px;
-	display: block;
-	text-indent: -3000px;
-	overflow: hidden;
-}
-
-.bootstrap-transfer-container .illustration {
-	position: absolute;
-	top: 5px;
-	left: 85px;
-	display: inline-block;
-	width: 16px;
-	height: 16px;
-	background: url(../img/bootstrap-transfer-selector-add.gif) top center no-repeat;
-}
-
-
-
-
-

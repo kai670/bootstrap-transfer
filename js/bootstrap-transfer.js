@@ -33,7 +33,8 @@
             /* target_id */
             if (settings.target_id != '') _this.$target_select.attr('id', settings.target_id);
             /* height */
-            _this.find('select.filtered').css('height', settings.height);
+            _this.find('select.filtered').css('height',settings.height);
+            _this.find('select.filtered.target').height(_this.find('select.filtered.target').height()+$(".bootstrap-transfer-container .selector-filter").outerHeight());
             /* #=============================================================================== */
             /* # Wire internal events */
             /* #=============================================================================== */
@@ -167,24 +168,21 @@
                             </div>\
                             <select multiple="multiple" class="filtered remaining">\
                             </select>\
-                            <a href="#" class="selector-chooseall">Choose all</a>\
+                            <a href="#" class="selector-chooseall">Choose all <i class="icon-forward"></i></a>\
                         </div>\
                     </td>\
                     <td>\
                         <div class="selector-chooser">\
-                            <a href="#" class="selector-add">add</a>\
-                            <a href="#" class="selector-remove">rem</a>\
+                            <a href="#" class="selector-add"><i class="icon-chevron-right"></i></a>\
+                            <a href="#" class="selector-remove"><i class="icon-chevron-left"></i></a>\
                         </div>\
                     </td>\
                     <td width="50%">\
                         <div class="selector-chosen">\
                             <h2>Chosen</h2>\
-                            <div class="selector-filter right">\
-                                <p>Select then click</p><span class="illustration"></span>\
-                            </div>\
                             <select multiple="multiple" class="filtered target">\
                             </select>\
-                            <a href="#" class="selector-clearall">Clear all</a>\
+                            <a href="#" class="selector-clearall"><i class="icon-backward"></i> Clear all</a>\
                         </div>\
                     </td>\
                 </tr>\
