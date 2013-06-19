@@ -134,6 +134,7 @@
 						$(this).remove();
 					}
 				});
+				_this.trigger("change");
 			};
 			_this.move_elems = function(values, b1, b2) {
 				for ( var i in values) {
