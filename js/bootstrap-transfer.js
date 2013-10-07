@@ -162,17 +162,15 @@
 	};
 	$.fn.bootstrapTransfer.defaults = {
 		/* jshint multistr: true */
-		'template' : '<table width="100%" cellspacing="0" cellpadding="0">\
+		'template' : '<table>\
                 <tr>\
-                    <td width="50%">\
-                        <div class="selector-available">\
+                    <td class="selector-available">\
+                        <div>\
                             <h2>Available</h2>\
                             <div class="selector-filter">\
-                                <table width="100%" border="0">\
+                                <table>\
                                     <tr>\
-                                        <td style="width:14px;">\
-                                            <i class="icon-search"></i>\
-                                        </td>\
+                                        <td><i class="icon-search"></i></td>\
                                         <td>\
                                             <div style="padding-left:10px;">\
                                                 <input type="text" class="filter-input">\
@@ -186,14 +184,14 @@
                             <a href="#" class="selector-chooseall">Choose all <i class="icon-forward"></i></a>\
                         </div>\
                     </td>\
-                    <td>\
-                        <div class="selector-chooser">\
+                    <td class="selector-chooser">\
+                        <div>\
                             <a href="#" class="selector-add"><i class="icon-chevron-right"></i></a>\
                             <a href="#" class="selector-remove"><i class="icon-chevron-left"></i></a>\
                         </div>\
                     </td>\
-                    <td width="50%">\
-                        <div class="selector-chosen">\
+                    <td class="selector-chosen">\
+                        <div>\
                             <h2>Chosen</h2>\
                             <select multiple="multiple" class="filtered target">\
                             </select>\

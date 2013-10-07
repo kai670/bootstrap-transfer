@@ -13,9 +13,13 @@
 	width:100%;
 }
 
+ .bootstrap-transfer-container .selector-available,
+ .bootstrap-transfer-container .selector-chosen {
+       width: 48%;
+}
 
-.bootstrap-transfer-container .selector-available,
-.bootstrap-transfer-container .selector-chosen {
+.bootstrap-transfer-container .selector-available>div,
+.bootstrap-transfer-container .selector-chosen>div {
 	float: left;
 	width: 100%;
 	text-align: center;
@@ -65,6 +69,14 @@
 	line-height: 140%;
 }
 
+.bootstrap-transfer-container .selector-filter>table{
+       width: 100%;
+}
+
+.bootstrap-transfer-container .selector-filter td{
+       border: 0;
+}
+
 .bootstrap-transfer-container .selector-filter input {
 	padding-right: 0;
 }
@@ -83,7 +95,7 @@
 	text-decoration: none;
 }
 
-.bootstrap-transfer-container .selector-chooser {
+.bootstrap-transfer-container .selector-chooser>div {
 	float: left;
 	width: 16px;
 	margin-top: -24px;
